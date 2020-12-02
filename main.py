@@ -52,7 +52,7 @@ def convertFormsExplanation():
 def generateProblem():
     mode = ""
     while True:
-        mode = input("Would you like a to always be 1? Y or N: ")
+        mode = input("Would you like a to always be 1? Y or N: ").upper()
         if (mode == "N" or mode == "Y"):
           while True:
               while True:
@@ -121,9 +121,9 @@ def updateDatabase():
   
 print(db)
 print(db.prefix(""))
-eusr = input("Do you already have an account? Y or N: ")
+eusr = input("Do you already have an account? Y or N: ").upper()
 while eusr != "Y" and eusr != "N":
-    eusr = input("Do you already have an account? Y or N: ")
+    eusr = input("Do you already have an account? Y or N: ").upper()
 if eusr == "Y":
     while True:
         code = int(input("What is your code: "))
